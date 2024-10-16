@@ -1787,3 +1787,6 @@
 {"level":"info","message":"⌛ Building environment","timeElapsed":147,"timestamp":"2024-10-16T16:14:40.340Z"}
 {"level":"info","message":"⌛ Validating navesTest.wtest","timeElapsed":204,"timestamp":"2024-10-16T16:14:40.548Z"}
 {"failures":[],"level":"info","message":"🧪 Test runner executed on c:\\Users\\martu\\Desktop\\UNQ\\2024\\2do_Cuatrimestre\\POO_I\\Practicas\\Repositorios\\2024s2-naves-espaciales-herencia-SantuMartire","result":{"failed":0,"ok":1},"timeElapsed":687,"timestamp":"2024-10-16T16:14:44.487Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":202,"timestamp":"2024-10-16T16:14:54.634Z"}
+{"level":"info","message":"⌛ Validating naves.wlk","timeElapsed":168,"timestamp":"2024-10-16T16:14:54.803Z"}
+{"level":"info","message":"⌛ Validating navesTest.wtest","timeElapsed":341,"timestamp":"2024-10-16T16:14:55.148Z"}
