@@ -26,6 +26,12 @@ describe "Nave de carga" {
 		assert.equals(0, naveVacia.carga())
 	}
 
+	test "Punto 1" {
+		naveVacia.propulsar()
+
+		assert.that(naveVacia.velocidad()  == 20000)
+	}
+
 }
 
 describe "Nave de pasajeros" {
@@ -54,6 +60,17 @@ describe "Nave de pasajeros" {
 		assert.that(naveSinPasajeros.alarma())
 	}
 
+	test "Punto 1" {
+		naveConPasajeros.propulsar()
+
+		assert.that(naveConPasajeros.velocidad()  == 300000)
+	}
+
+	test "Punto 3" {
+		naveConPasajeros.prepararViaje()
+
+		assert.that(naveConPasajeros.velocidad()  == 300000)
+	}
 }
 
 describe "Nave de combate" {
@@ -84,3 +101,25 @@ describe "Nave de combate" {
 		assert.equals("Enemigo encontrado", naveEnAtaque.ultimoMensaje())
 	}
 }
+
+describe "Nave de Residuos" {
+
+	const naveDeResiduos = new NaveDeResiduos(carga = 5000, velocidad = 10000)
+	
+	const navePunto3 = new NaveDeResiduos()
+	test "recibir amenaza"{
+		naveDeResiduos.recibirAmenaza()
+
+		assert.that(naveDeResiduos.sellado())
+		assert.equals(5000, naveDeResiduos.carga())
+		assert.equals(0, naveDeResiduos.velocidad())
+	}
+
+	test "Preparar viaje"{
+		navePunto3.prepararViaje()
+
+		assert.that(navePunto3.sellado())
+		assert.equals(15000, navePunto3.velocidad())
+	}
+}
+
